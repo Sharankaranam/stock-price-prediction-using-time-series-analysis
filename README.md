@@ -4,17 +4,17 @@ This GitHub repository contains a web application built with Flask that predicts
 
 Key Features:
 
-Fetches historical stock price data from Alpha Vantage API.
-Utilizes Min-Max scaling to normalize the data for training.
-Implements an LSTM model for stock price prediction.
-Allows users to input a stock symbol and view predictions.
-Provides an interactive web interface for easy access.
+1)Fetches historical stock price data from Alpha Vantage API.
+2)Utilizes Min-Max scaling to normalize the data for training.
+3)Implements an LSTM model for stock price prediction.
+4)Allows users to input a stock symbol and view predictions.
+5)Provides an interactive web interface for easy access.
 
 Dependencies:
-Python 3.x
-Flask
-Alpha Vantage Python Library
-scikit-learn
-TensorFlow
+1)Python 3.x,
+2)Flask;
+3)Alpha Vantage Python Library;
+4)scikit-learn;
+5)TensorFlow;
 
 Note: Ensure you have the required dependencies installed and properly configured before running the application.
