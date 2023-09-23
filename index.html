@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Price Prediction</title>
+</head>
+<body>
+    <h1>Stock Price Prediction</h1>
+    
+    <form method="POST">
+        <label for="symbol">Enter Stock Symbol (e.g., AAPL):</label>
+        <input type="text" id="symbol" name="symbol" required>
+        <button type="submit">Predict</button>
+    </form>
+    
+    {% if symbol %}
+    <h2>Stock Symbol: {{ symbol }}</h2>
+    {% endif %}
+    
+    {% if prices %}
+    <h3>Actual Prices</h3>
+    <ul>
+        {% for price in prices %}
+        <li>{{ price }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    
+    {% if predictions %}
+    <h3>Predicted Prices</h3>
+    <ul>
+        {% for prediction in predictions %}
+        <li>{{ prediction[0] }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
